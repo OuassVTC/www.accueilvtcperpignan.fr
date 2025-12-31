@@ -1,36 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Accueil VTC Perpignan | Chauffeur privé</title>
-  <meta name="description" content="Accueil VTC Perpignan, chauffeur privé disponible 24h/24. Réservation en ligne ou par téléphone.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accueil VTC Perpignan | Chauffeur VTC 24/7 – Réserver en ligne</title>
+  <meta name="description" content="Accueil VTC Perpignan : chauffeur privé disponible 24h/24. Transferts gare et aéroport, trajets sur mesure. Réservez en ligne ou appelez le 06 44 12 07 84." />
+
+  <!-- Open Graph (réseaux sociaux) -->
+  <meta property="og:title" content="Accueil VTC Perpignan" />
+  <meta property="og:description" content="Chauffeur VTC à Perpignan disponible 24h/24. Réservation en ligne ou par téléphone." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="top">
-    <h1>Accueil VTC Perpignan</h1>
-    <div class="buttons">
-      <a class="btn call" href="tel:0644120784">Appelez-nous</a>
-      <a class="btn book" href="https://www.ouassvtc.fr">Réserver</a>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__name">Accueil VTC <strong>Perpignan</strong></span>
+      </div>
+
+      <div class="nav__cta">
+        <a class="btn btn--yellow" href="tel:0644120784" aria-label="Appeler Accueil VTC Perpignan">
+          Appelez-nous
+        </a>
+        <a class="btn btn--red" href="https://www.ouassvtc.fr" aria-label="Réserver un VTC à Perpignan">
+          Réserver
+        </a>
+      </div>
     </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
-      <h2>Votre chauffeur VTC à Perpignan</h2>
-      <p>Avec nos chauffeurs, la disponibilité Accueil VTC Perpignan est entièrement à votre service.</p>
-      <ul>
-        <li>Disponibilité & réactivité</li>
-        <li>Chauffeurs courtois et expérimentés</li>
-        <li>Confort premium, véhicule soigné</li>
-        <li>Trajets sur mesure : gare, aéroport, professionnels, événements</li>
-      </ul>
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <h1>Accueil VTC Perpignan</h1>
+          <p class="hero__lead">
+            Avec nos chauffeurs, la disponibilité <strong>Accueil VTC Perpignan</strong> est entièrement à votre service.
+          </p>
+
+          <ul class="checks">
+            <li>Disponibilité & réactivité</li>
+            <li>Chauffeurs courtois et expérimentés</li>
+            <li>Confort premium, véhicule soigné</li>
+            <li>Trajets sur mesure : gare, aéroport, professionnels, événements</li>
+          </ul>
+
+          <div class="hero__buttons">
+            <a class="btn btn--red btn--lg" href="https://www.ouassvtc.fr">Réserver un VTC à Perpignan</a>
+            <a class="btn btn--yellow btn--lg" href="tel:0644120784">Appelez-nous</a>
+          </div>
+        </div>
+
+        <!-- Illustration (sans texte “bizarre” dans l’image) -->
+        <div class="hero__right" aria-hidden="true">
+          <div class="phone-card">
+            <div class="phone">
+              <div class="phone__top"></div>
+              <div class="phone__screen">
+                <div class="map">
+                  <div class="map__pin map__pin--a">A</div>
+                  <div class="map__route"></div>
+                  <div class="map__pin map__pin--b">B</div>
+                  <div class="map__car"></div>
+                </div>
+              </div>
+              <div class="phone__bottom"></div>
+            </div>
+            <div class="hand"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vagues catalanes -->
+      <div class="ribbons" aria-hidden="true">
+        <span class="ribbon ribbon--yellow"></span>
+        <span class="ribbon ribbon--red"></span>
+        <span class="ribbon ribbon--yellow ribbon--thin"></span>
+      </div>
+    </section>
+
+    <!-- SECTIONS (cartes) -->
+    <section class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <h2>Chauffeur VTC à Perpignan</h2>
+          <p class="muted">Disponible 24h/24, 7j/7 pour vos trajets.</p>
+          <ul class="bullets">
+            <li>VTC Perpignan gare SNCF</li>
+            <li>VTC aéroport Perpignan–Rivesaltes</li>
+            <li>Chauffeur privé pour professionnels</li>
+            <li>Déplacements privés et événements</li>
+            <li>Réservation VTC 24h/24</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Réserver votre VTC</h2>
+          <p class="muted">Réservation en ligne (formulaire) ou par téléphone.</p>
+
+          <div class="stack">
+            <a class="btn btn--red btn--full" href="https://www.ouassvtc.fr">Réserver</a>
+            <a class="btn btn--yellow btn--full" href="tel:0644120784">Appelez-nous</a>
+          </div>
+
+          <div class="mini-map" aria-hidden="true">
+            <div class="mini-map__title">Perpignan</div>
+            <div class="mini-map__pin"></div>
+            <div class="mini-map__lines"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZONES (SEO local) -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="card card--wide">
+          <h2>Zones desservies autour de Perpignan</h2>
+          <p class="muted">
+            Perpignan, Canet-en-Roussillon, Saint-Cyprien, Argelès-sur-Mer, Collioure, Le Barcarès, Rivesaltes, Bompas, Pia, Cabestany.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    © 2024 Accueil VTC Perpignan — Contact : 06 44 12 07 84
+  <footer class="site-footer">
+    <div class="container footer">
+      <div>© <span id="y"></span> Accueil VTC Perpignan</div>
+      <div><a href="tel:0644120784">06 44 12 07 84</a></div>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
