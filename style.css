@@ -358,3 +358,185 @@ h1{
   .phone-card{ margin: 0 auto; }
   .grid-2{ grid-template-columns:1fr; }
 }
+/* =========================
+   MOBILE OPTIMISATION (à coller tout en bas)
+   ========================= */
+
+/* Tap targets + anti-zoom iOS */
+.btn, button, a { -webkit-tap-highlight-color: transparent; }
+input, textarea, select { font-size:16px; }
+
+/* Mobile */
+@media (max-width: 560px){
+
+  /* Container */
+  .container{
+    width: calc(100% - 28px);
+  }
+
+  /* Header : logo au-dessus + 2 boutons sur une ligne */
+  .nav{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 0;
+  }
+
+  .brand{
+    font-size: 18px;
+  }
+
+  .nav__cta{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .nav__cta .btn{
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 12px;
+  }
+
+  /* HERO : tout en colonne, texte plus lisible */
+  .hero__grid{
+    grid-template-columns: 1fr;
+    padding: 26px 0 34px;
+    gap: 16px;
+  }
+
+  h1{
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 0 0 8px;
+  }
+
+  .hero__lead{
+    font-size: 15px;
+    margin: 0 0 14px;
+  }
+
+  .checks{
+    gap: 10px;
+  }
+
+  .checks li{
+    font-size: 14.5px;
+    padding-left: 26px;
+  }
+
+  .checks li::before{
+    top: 5px;
+    width: 13px;
+    height: 13px;
+  }
+
+  /* Boutons principaux : en colonne (meilleure conversion) */
+  .hero__buttons{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .btn--lg{
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border-radius: 14px;
+  }
+
+  /* Illustration téléphone : centrée et moins grande */
+  .phone-card{
+    width: 100%;
+    margin: 0 auto;
+    height: 340px;
+    aspect-ratio: auto;
+  }
+
+  .phone{
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    bottom: 0;
+    width: 220px;
+    height: 360px;
+    border-radius: 30px;
+    position: absolute;
+  }
+
+  .phone__screen{
+    height: 285px;
+  }
+
+  /* Main plus discrète */
+  .hand{
+    opacity: .22;
+    right: 0;
+    width: 190px;
+    height: 220px;
+  }
+
+  /* Vagues : moins envahissantes */
+  .ribbons{
+    inset: auto -35% -30% -35%;
+    height: 260px;
+    opacity: .85;
+  }
+
+  .ribbon{
+    height: 95px;
+  }
+
+  .ribbon--red{
+    top: 95px;
+  }
+
+  .ribbon--thin{
+    height: 70px;
+    top: 165px;
+  }
+
+  /* Sections : 1 colonne + espace plus propre */
+  .section{
+    padding: 18px 0;
+  }
+
+  .grid-2{
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card{
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .card h2{
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .muted{
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .mini-map{
+    height: 150px;
+  }
+
+  /* Footer : empilé */
+  .footer{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 14px 0;
+  }
+}
+
+/* Tablette (optionnel mais utile) */
+@media (min-width: 561px) and (max-width: 920px){
+  .phone-card{ height: 380px; }
+}
