@@ -4,21 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Accueil VTC Perpignan | Chauffeur VTC 24/7 – Réserver</title>
-  <meta name="description" content="Accueil VTC Perpignan : chauffeur privé disponible 24h/24 et 7j/7. Transferts gare SNCF et aéroport Perpignan–Rivesaltes, trajets sur mesure. Réservez en ligne ou appelez le 06 44 12 07 84." />
+  <title>Accueil VTC Perpignan | Chauffeur privé 24h/24 – Réservation</title>
+  <meta name="description" content="Accueil VTC Perpignan : chauffeur VTC disponible 24h/24 et 7j/7. Transferts gare SNCF et aéroport Perpignan–Rivesaltes. Réservez en ligne ou appelez le 06 44 12 07 84." />
   <meta name="robots" content="index,follow" />
-
-  <!-- Canonical (SEO) -->
   <link rel="canonical" href="https://www.accueilvtcperpignan.fr/" />
 
-  <!-- Open Graph (partage réseaux) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Accueil VTC Perpignan" />
-  <meta property="og:description" content="Chauffeur VTC à Perpignan disponible 24h/24. Réservation en ligne ou par téléphone." />
+  <meta property="og:description" content="Chauffeur VTC à Perpignan disponible 24h/24. Réservez en ligne ou appelez-nous." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -27,13 +22,16 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="container nav">
-      <div class="brand" aria-label="Accueil VTC Perpignan">
+      <a class="brand brand--premium" href="/" aria-label="Accueil VTC Perpignan">
         <span class="brand__dot" aria-hidden="true"></span>
-        <span class="brand__name">Accueil VTC <strong>Perpignan</strong></span>
-      </div>
+        <span class="brand__name">
+          <span class="brand__top">Accueil</span>
+          <span class="brand__main">VTC Perpignan</span>
+        </span>
+      </a>
 
       <div class="nav__cta">
-        <a class="btn btn--yellow" href="tel:0644120784" aria-label="Appeler Accueil VTC Perpignan au 06 44 12 07 84">
+        <a class="btn btn--yellow" href="tel:0644120784" aria-label="Appeler Accueil VTC Perpignan">
           Appelez-nous
         </a>
         <a class="btn btn--red" href="https://www.ouassvtc.fr" aria-label="Réserver un VTC à Perpignan">
@@ -44,53 +42,116 @@
   </header>
 
   <main>
-
     <!-- HERO -->
     <section class="hero">
       <div class="container hero__grid">
-
         <div class="hero__left">
-          <!-- H1 (tu voulais le garder) -->
           <h1>Accueil VTC Perpignan</h1>
 
-          <!-- Sous-titre validé : plus pro sans changer ton titre -->
           <p class="hero__lead">
-            Chauffeur VTC à Perpignan disponible 24h/24 et 7j/7.
-            Service professionnel, ponctuel et fiable pour tous vos déplacements.
+            Chauffeur VTC à Perpignan disponible <strong>24h/24</strong> et <strong>7j/7</strong>.
+            Ponctualité, confort et discrétion pour vos trajets gare, aéroport, rendez-vous et événements.
           </p>
 
           <ul class="checks">
-            <li>Prise en charge rapide, disponibilité 24h/24</li>
-            <li>Chauffeurs professionnels, discrets et courtois</li>
-            <li>Confort premium et véhicule soigné</li>
-            <li>Trajets sur mesure : gare, aéroport, rendez-vous, événements</li>
+            <li>Prise en charge rapide et service fiable</li>
+            <li>Chauffeurs professionnels, courtois et discrets</li>
+            <li>Véhicule propre, confortable et entretenu</li>
+            <li>Trajets sur mesure : Perpignan et Pyrénées-Orientales</li>
           </ul>
 
           <div class="hero__buttons">
             <a class="btn btn--red btn--lg" href="https://www.ouassvtc.fr">Réserver un VTC à Perpignan</a>
             <a class="btn btn--yellow btn--lg" href="tel:0644120784">Appelez-nous</a>
           </div>
+
+          <p class="hero__note">
+            Avec nos chauffeurs, la disponibilité <strong>Accueil VTC Perpignan</strong> est entièrement à votre service.
+          </p>
         </div>
 
-        <!-- Illustration téléphone -->
+        <!-- Téléphone + Carte SVG (rues fictives) -->
         <div class="hero__right" aria-hidden="true">
           <div class="phone-card">
             <div class="phone">
               <div class="phone__top"></div>
 
               <div class="phone__screen">
-                <!-- Badge -->
-                <div class="driver-status">
-                  <span class="dot"></span>
-                  Votre chauffeur est en approche
-                </div>
+                <!-- Bouton SMS (ouvre Messages avec texte pré-rempli) -->
+                <a class="driver-sms"
+                   href="sms:+33644120784?body=Bonjour%2C%20je%20vous%20contacte%20depuis%20Accueil%20VTC%20Perpignan.%20Pouvez-vous%20me%20confirmer%20la%20prise%20en%20charge%20s'il%20vous%20pla%C3%AEt%20%3F"
+                   aria-label="Envoyer un message à votre chauffeur">
+                  <span class="driver-sms__icon" aria-hidden="true"></span>
+                  Envoyer un message à votre chauffeur
+                </a>
 
-                <!-- Carte (version CSS actuelle, compatible avec ton style.css) -->
-                <div class="map">
-                  <div class="map__pin map__pin--a">A</div>
-                  <div class="map__route"></div>
-                  <div class="map__pin map__pin--b">B</div>
-                  <div class="map__car"></div>
+                <div class="map-illu map-illu--phone">
+                  <svg viewBox="0 0 360 560" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="bgMapPhone" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#f7f8fc"/>
+                        <stop offset="1" stop-color="#ffffff"/>
+                      </linearGradient>
+                      <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="140%">
+                        <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity=".12"/>
+                      </filter>
+                    </defs>
+
+                    <rect x="0" y="0" width="360" height="560" rx="22" fill="url(#bgMapPhone)"/>
+
+                    <!-- Quartiers -->
+                    <g opacity=".22">
+                      <rect x="22" y="28" width="130" height="90" rx="16" fill="#f5c400"/>
+                      <rect x="170" y="50" width="168" height="130" rx="18" fill="#c60000"/>
+                      <rect x="30" y="150" width="160" height="120" rx="18" fill="#9ad7ff"/>
+                      <rect x="210" y="220" width="120" height="90" rx="18" fill="#b7f2d6"/>
+                      <rect x="36" y="310" width="150" height="120" rx="18" fill="#c60000"/>
+                      <rect x="198" y="340" width="150" height="160" rx="20" fill="#f5c400"/>
+                    </g>
+
+                    <!-- Routes -->
+                    <g stroke="#1b1b1b" stroke-width="9" opacity=".18" stroke-linecap="round">
+                      <path d="M40 115 C120 170, 150 175, 220 215 C275 245, 300 295, 325 335" fill="none"/>
+                      <path d="M65 75 C150 125, 200 145, 295 175" fill="none"/>
+                      <path d="M55 250 C140 280, 190 310, 240 365 C275 400, 305 425, 332 455" fill="none"/>
+                    </g>
+                    <g stroke="#2a2a2a" stroke-width="6" opacity=".10" stroke-linecap="round">
+                      <path d="M35 205 C95 215, 125 230, 175 255" fill="none"/>
+                      <path d="M120 300 C160 310, 185 330, 215 355" fill="none"/>
+                      <path d="M210 110 C250 140, 285 155, 330 165" fill="none"/>
+                      <path d="M85 410 C130 395, 160 390, 205 405" fill="none"/>
+                    </g>
+
+                    <!-- Noms de rues (fictifs) -->
+                    <g font-family="Arial" font-size="14" fill="#0f172a" opacity=".55" font-weight="700">
+                      <text x="62" y="135" transform="rotate(-18 62 135)">Rue du Castillet</text>
+                      <text x="185" y="125" transform="rotate(12 185 125)">Avenue du Canigou</text>
+                      <text x="70" y="285" transform="rotate(10 70 285)">Boulevard des Plages</text>
+                      <text x="200" y="300" transform="rotate(-12 200 300)">Rue des Catalans</text>
+                      <text x="90" y="455" transform="rotate(-6 90 455)">Allée des Oliviers</text>
+                    </g>
+
+                    <!-- Itinéraire -->
+                    <path d="M78 108 C130 160, 118 220, 170 260 C215 292, 250 330, 280 390"
+                          stroke="#2b6cff" stroke-width="12" fill="none" stroke-linecap="round" filter="url(#shadowSoft)"/>
+
+                    <!-- Pins -->
+                    <g filter="url(#shadowSoft)">
+                      <circle cx="78" cy="108" r="18" fill="#c60000"/>
+                      <text x="78" y="114" font-size="18" text-anchor="middle" fill="#fff" font-weight="900">A</text>
+
+                      <circle cx="280" cy="390" r="18" fill="#f5c400"/>
+                      <text x="280" y="396" font-size="18" text-anchor="middle" fill="#111" font-weight="900">B</text>
+                    </g>
+
+                    <!-- Voiture -->
+                    <g transform="translate(242 360)" filter="url(#shadowSoft)">
+                      <rect x="0" y="10" width="62" height="28" rx="9" fill="#111"/>
+                      <rect x="12" y="3" width="36" height="18" rx="7" fill="#2b2b2b"/>
+                      <circle cx="16" cy="40" r="6" fill="#444"/>
+                      <circle cx="46" cy="40" r="6" fill="#444"/>
+                    </g>
+                  </svg>
                 </div>
               </div>
 
@@ -100,7 +161,6 @@
             <div class="hand"></div>
           </div>
         </div>
-
       </div>
 
       <!-- Vagues catalanes -->
@@ -111,21 +171,20 @@
       </div>
     </section>
 
-    <!-- CARTES -->
+    <!-- SECTIONS -->
     <section class="section">
       <div class="container grid-2">
-
         <div class="card">
           <h2>Chauffeur VTC à Perpignan</h2>
           <p class="muted">
-            Accueil VTC Perpignan vous accompagne pour vos déplacements privés et professionnels,
-            avec sérieux, confort et ponctualité.
+            Accueil VTC Perpignan vous accompagne pour vos déplacements privés et professionnels
+            avec un service fiable, ponctuel et confortable.
           </p>
           <ul class="bullets">
             <li>VTC Perpignan centre-ville et agglomération</li>
             <li>Transfert gare SNCF de Perpignan</li>
             <li>Transfert aéroport Perpignan–Rivesaltes</li>
-            <li>Trajets longue distance et rendez-vous professionnels</li>
+            <li>Rendez-vous professionnels et trajets longue distance</li>
             <li>Événements : mariages, soirées, séminaires</li>
           </ul>
         </div>
@@ -133,22 +192,67 @@
         <div class="card">
           <h2>Réserver votre VTC</h2>
           <p class="muted">
-            Réservez en ligne via le formulaire, ou appelez-nous pour une prise en charge immédiate.
+            Réservez en ligne via le formulaire ou contactez-nous par téléphone.
+            Nous confirmons rapidement votre prise en charge.
           </p>
 
           <div class="stack">
             <a class="btn btn--red btn--full" href="https://www.ouassvtc.fr">Réserver</a>
             <a class="btn btn--yellow btn--full" href="tel:0644120784">Appelez-nous</a>
+            <a class="btn btn--full" href="sms:+33644120784?body=Bonjour%2C%20je%20souhaite%20un%20VTC%20%C3%A0%20Perpignan.%20Merci%20de%20me%20confirmer%20la%20disponibilit%C3%A9."
+               style="background:#111;color:#fff;border-radius:12px;font-weight:900;">
+              Envoyer un SMS
+            </a>
           </div>
 
-          <!-- Mini-carte (compatible avec ton CSS actuel) -->
-          <div class="mini-map" aria-hidden="true">
+          <!-- Carte en bas (rues fictives) -->
+          <div class="mini-map mini-map--illu" aria-hidden="true" style="margin-top:14px;">
             <div class="mini-map__title">Perpignan</div>
-            <div class="mini-map__pin"></div>
-            <div class="mini-map__lines"></div>
+
+            <svg viewBox="0 0 900 420" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="bgMapBottom" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffffff"/>
+                  <stop offset="1" stop-color="#f7f8fc"/>
+                </linearGradient>
+              </defs>
+
+              <rect x="0" y="0" width="900" height="420" rx="26" fill="url(#bgMapBottom)"/>
+
+              <g opacity=".20">
+                <rect x="40" y="60" width="260" height="150" rx="26" fill="#f5c400"/>
+                <rect x="320" y="70" width="540" height="150" rx="28" fill="#c60000"/>
+                <rect x="90" y="230" width="350" height="150" rx="28" fill="#c60000"/>
+                <rect x="470" y="240" width="390" height="130" rx="28" fill="#f5c400"/>
+              </g>
+
+              <g stroke="#1b1b1b" stroke-width="14" opacity=".16" stroke-linecap="round">
+                <path d="M90 130 C230 180, 360 180, 520 220 C650 260, 740 300, 830 345" fill="none"/>
+                <path d="M130 305 C260 265, 350 240, 430 210 C520 180, 620 150, 780 120" fill="none"/>
+                <path d="M420 80 C450 130, 470 170, 520 220" fill="none"/>
+              </g>
+
+              <g font-family="Arial" font-size="18" fill="#0f172a" opacity=".55" font-weight="700">
+                <text x="120" y="115" transform="rotate(-10 120 115)">Avenue du Canigou</text>
+                <text x="170" y="330" transform="rotate(-8 170 330)">Boulevard des Plages</text>
+                <text x="540" y="140" transform="rotate(8 540 140)">Rue du Castillet</text>
+                <text x="520" y="320" transform="rotate(6 520 320)">Rue des Catalans</text>
+              </g>
+
+              <path d="M150 145 C270 215, 360 235, 490 260 C610 285, 705 312, 790 345"
+                    stroke="#2b6cff" stroke-width="18" fill="none" stroke-linecap="round" opacity=".9"/>
+
+              <circle cx="520" cy="240" r="20" fill="#c60000"/>
+              <circle cx="520" cy="240" r="9" fill="#fff" opacity=".85"/>
+
+              <g transform="translate(740 320)" opacity=".9">
+                <rect x="0" y="8" width="70" height="30" rx="10" fill="#111"/>
+                <circle cx="18" cy="42" r="7" fill="#444"/>
+                <circle cx="52" cy="42" r="7" fill="#444"/>
+              </g>
+            </svg>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -158,8 +262,8 @@
         <div class="card card--wide">
           <h2>Zones desservies autour de Perpignan</h2>
           <p class="muted">
-            Perpignan, Canet-en-Roussillon, Saint-Cyprien, Argelès-sur-Mer, Collioure, Le Barcarès,
-            Rivesaltes, Bompas, Pia, Cabestany.
+            Perpignan, Canet-en-Roussillon, Saint-Cyprien, Argelès-sur-Mer, Collioure,
+            Le Barcarès, Rivesaltes, Bompas, Pia, Cabestany.
           </p>
           <p class="muted" style="margin-top:10px;">
             Besoin d’un VTC à Perpignan pour un transfert gare, aéroport ou un trajet sur mesure ?
@@ -168,14 +272,13 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer">
       <div>© <span id="y"></span> Accueil VTC Perpignan</div>
-      <div><a href="tel:0644120784" aria-label="Appeler Accueil VTC Perpignan">06 44 12 07 84</a></div>
+      <div><a href="tel:0644120784">06 44 12 07 84</a></div>
     </div>
   </footer>
 
